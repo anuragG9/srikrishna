@@ -6,7 +6,7 @@
    --light-bg:#eee;
    --white:#fff;
    --black:#303030;
-   --border:.1rem solid var(var(--light-color));
+   --border:0.1rem solid var(--light-color);
    --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
@@ -17,6 +17,7 @@
    outline: none; border: none;
    text-decoration: none;
 }
+
 
 *::selection{
    background-color: var(--main-color);
@@ -226,19 +227,39 @@ background-color: var(--black);
    flex: 1 1 20rem;
 }
 
+input{
+   width: 100%;
+   border: var(--border);
+   padding: 0.5rem;
+   color: var(--black);
+   border-radius: 5px;
+   font-size: 1.4rem;
+}
+
+select{
+   width: 100%;
+   border: var(--border);
+   padding: 0.5rem;
+   color: var(--black);
+   border-radius: 5px;
+   font-size: 1.4rem;
+   background-color: var(--white);
+}
+
 .home .center form .box .input{
    width: 100%;
    border: var(--border);
-   padding: 1.4rem;
+   padding: 0.5rem;
    color: var(--black);
-   font-size: 1.8rem;
+   border-radius: 5px;
+   font-size: 1.4rem;
    margin:1rem 0;
 }
 
 .home .center form .box p{
    color: var(--light-color);
-   font-size: 1.7rem;
-   padding-top: 1rem;
+   font-size: 1.6rem;
+   padding-top: 1rem 0;
 }
 
 .home .center form .box p span{
@@ -815,16 +836,16 @@ background-color: var(--black);
 
 .filters form .flex .box .input{
    width: 100%;
-   margin: 1rem 0;
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    color: var(--black);
    border: var(--border);
-   padding: 1.4rem;
+   padding: 0.rem;
 }
 
 .filters form .flex .box p{
    font-size: 1.6rem;
    color: var(--light-color  );
+   padding: 1rem 0;
 }
 
  /* search filter section ends beetween listings section  starts */
@@ -928,7 +949,7 @@ background-color: var(--black);
 }
 
 .footer .flex .box:last-child{
-   text-align: right;
+   text-align: left;
 }
 
 .footer .flex .box:last-child a i{
@@ -940,7 +961,7 @@ background-color: var(--black);
 }
 
 .footer .flex .box:nth-child(2){
-   text-align: center;
+   text-align: left;
 }
 
 .footer .credit{
